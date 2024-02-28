@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">Aqui você irá encontrar os códigos desenvolvidos em aula</p>
+<p align="left">Aqui você irá encontrar os códigos desenvolvidos nas aulas de Desenvolvimento de Software I</p>
 
 ###
 
