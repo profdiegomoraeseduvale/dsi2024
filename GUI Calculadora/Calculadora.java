@@ -54,12 +54,18 @@ public class Calculadora extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       int n1 = Integer.valueOf(txtN1.getText());
-       int n2 = Integer.valueOf(txtN2.getText());
-       
-       int soma = n1 + n2;
-       
-       lblResultado.setText(String.valueOf(soma));
+        if(txtN1.getText().isEmpty() || txtN2.getText().isEmpty()){
+          
+            JOptionPane.showMessageDialog(null, "Campos Vazios!");
+            txtN1.requestFocus();
+              
+          }else{
+                int n1 = Integer.valueOf(txtN1.getText());
+                int n2 = Integer.valueOf(txtN2.getText());       
+                int soma = n1 + n2;       
+                lblResultado.setText(String.valueOf(soma));
+             
+          }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
